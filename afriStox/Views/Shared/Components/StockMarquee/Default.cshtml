@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<afriStox.Models.StocksGhana>  
+
+    <div class="marquee">
+      
+ @foreach (var item in Model) {
+
+
+
+
+
+                <span class="breadcrumb-item"><a href="#">@Html.DisplayFor(modelItem => item.name)</a></span>
+                <span class="breadcrumb-item active" aria-current="page">@Html.DisplayFor(modelItem => item.price)</span>
+           
+   
+ }
+ </div>

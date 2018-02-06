@@ -1,0 +1,307 @@
+﻿<!-- start: MAIN CSS -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="bower_components/themify-icons/themify-icons.css">
+		<link rel="stylesheet" href="bower_components/flag-icon-css/css/flag-icon.min.css">
+		<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+		<link rel="stylesheet" href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css">
+		<link rel="stylesheet" href="bower_components/switchery/dist/switchery.min.css">
+		<link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
+		<link rel="stylesheet" href="bower_components/ladda/dist/ladda-themeless.min.css">
+		<link rel="stylesheet" href="bower_components/slick.js/slick/slick.css">
+		<link rel="stylesheet" href="bower_components/slick.js/slick/slick-theme.css">
+		<!-- end: MAIN CSS -->
+
+        <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+		<link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css">
+		<link rel="stylesheet" href="bower_components/DataTables/media/css/dataTables.bootstrap.min.css">
+		<!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+<!-- start: Packet CSS -->
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/plugins.css">
+		<link rel="stylesheet" href="assets/css/themes/lyt1-theme-1.css" id="skin_color">
+		<!-- end: Packet CSS --> 
+        <style>
+        .marquee {
+  color: black;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
+</style>
+ <!-- services -->
+            <div class="row">
+                <div class="col-sm-12">
+                @await Component.InvokeAsync("StockMarquee")
+               
+            </div>
+        <section class="overview-block-ptb">
+            <div class="container">
+                
+                <div class="row">
+                 <div class="col-md-12">
+
+                    
+                                    <div class="panel panel-white no-radius" id="panelsocial"></div>
+                                        <div class="panel-heading border-light">
+                                            <h4 class="panel-title">Social Marketing</h4>
+                                            <div class="panel-tools">
+                                                <a data-original-title="Collapse" data-toggle="tooltip" data-placement="top" data-trigger="hover" class="btn btn-transparent btn-sm panel-collapse" href="#"><i class="ti-minus collapse-off"></i><i class="ti-plus collapse-on"></i></a>
+                                                <a data-original-title="Close" data-toggle="tooltip" data-placement="top" data-trigger="hover" class="btn btn-transparent btn-sm panel-close" href="#"><i class="ti-close"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="panel-wrapper">
+                                            <div class="panel-body no-padding">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="padding-10 block text-center">
+                                                            <p>
+                                                                <span class="text-bold">Social Traffic</span><span class="text-light"> (7 days)</span>
+                                                            </p>
+                                                            <div>
+                                                                <span class="mini-pie-100"><canvas id="socialChart"></canvas></span>
+                                                            </div>
+                                                            <h4><i class="fa fa-sort-up small text-green margin-right-5"></i><span class="text-bold text-dark margin-right-10">Facebook</span><span class="text-grey">(43.98%)</span></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="padding-10 block text-center">
+                                                            <p>
+                                                                <span class="text-bold">Marketing Channels</span><span class="text-light"> (7 days)</span>
+                                                            </p>
+                                                            <div>
+                                                                <span class="mini-pie-100"><canvas id="social2Chart"></canvas></span>
+                                                            </div>
+                                                            <h4><i class="fa fa-sort-up small text-green margin-right-5"></i><span class="text-bold text-dark margin-right-10">Display Ads</span><span class="text-grey">(72.11%)</span></h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix padding-5 space5">
+                                                    <div class="col-xs-4 text-center no-padding">
+                                                        <div class="border-right border-dark">
+                                                            <a class="text-dark" href="#"> <i class="fa fa-heart-o text-red"></i> 250 </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4 text-center no-padding">
+                                                        <div class="border-right border-dark">
+                                                            <a class="text-dark" href="#"> <i class="fa fa-bookmark-o text-green"></i> 20 </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-4 text-center no-padding">
+                                                        <a class="text-dark" href="#"><i class="fa fa-comment-o text-azure"></i> 544</a>
+                                                    </div>
+                                                </div>
+                                                <div class="tabbable no-margin no-padding">
+                                                    <ul class="nav nav-tabs" id="myTab">
+                                                        <li class="active padding-top-5 padding-left-5">
+                                                            <a data-toggle="tab" href="#social_this_month"> Nigeria </a>
+                                                        </li>
+                                                        <li class="padding-top-5">
+                                                            <a data-toggle="tab" href="#social_last_month"> Ghana </a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="tab-content">
+                                                        <div id="social_this_month" class="tab-pane padding-bottom-5 active">
+                                                      
+                                                            @await Component.InvokeAsync("NigeriaStockList")
+                                                        </div>
+                                                        <div id="social_last_month" class="tab-pane padding-bottom-5">
+                                                             @await Component.InvokeAsync("GhanaStockList")
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer no-border padding-top-0">
+                                                <p class="no-margin">
+                                                    <a href="#"><i class="fa fa-arrow-circle-o-down text-green"></i></a>
+                                                    <span class="text-light margin-left-10">Show more details </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            
+                      
+
+
+
+              
+               
+            </div>
+        </section>
+      
+        <!-- Team -->
+        <section class="overview-block-ptb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="heading-title">
+                            <h3 class="title iq-tw-5 iq-mb-20">Our Investors</h3>
+                            <p>Here is 3 Easy Steps to Busy & Sell Bitcoin. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="iq-team1 text-center iq-mtb-15">
+                            <div class="team-blog">
+                                <div class="team-images"> <img class="img-fluid" src="http://via.placeholder.com/300x400" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="mt-10">+0123 456 789</div>
+                                    <div class="text-white">support@bitcoin.com</div>
+                                </div>
+                                <div class="team-social">
+                                    <ul>
+                                        <li> <a href="#"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h6 class="iq-tw-6 iq-mt-10"><a href="team-details-1.html">Rinks Cooper</a></h6>
+                            <p>CEO, Bitcoin</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="iq-team1 text-center iq-mtb-15">
+                            <div class="team-blog">
+                                <div class="team-images"> <img class="img-fluid" src="http://via.placeholder.com/300x400" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="mt-10">+0123 456 789</div>
+                                    <div class="text-white">support@bitcoin.com</div>
+                                </div>
+                                <div class="team-social">
+                                    <ul>
+                                        <li> <a href="#"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h6 class="iq-tw-6 iq-mt-10"><a href="team-details-1.html">JD Scot</a></h6>
+                            <p>CEO, Bitcoin</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="iq-team1 text-center iq-mtb-15">
+                            <div class="team-blog">
+                                <div class="team-images"> <img class="img-fluid" src="http://via.placeholder.com/300x400" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="mt-10">+0123 456 789</div>
+                                    <div class="text-white">support@bitcoin.com</div>
+                                </div>
+                                <div class="team-social">
+                                    <ul>
+                                        <li> <a href="#"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h6 class="iq-tw-6 iq-mt-10"><a href="team-details-1.html">Haris Morgan</a></h6>
+                            <p>CEO, Bitcoin</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="iq-team1 text-center iq-mtb-15">
+                            <div class="team-blog">
+                                <div class="team-images"> <img class="img-fluid" src="http://via.placeholder.com/300x400" alt=""> </div>
+                                <div class="team-description">
+                                    <div class="mt-10">+0123 456 789</div>
+                                    <div class="text-white">support@bitcoin.com</div>
+                                </div>
+                                <div class="team-social">
+                                    <ul>
+                                        <li> <a href="#"> <i class="ion-social-facebook-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-twitter-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-rss-outline"></i> </a> </li>
+                                        <li> <a href="#"> <i class="ion-social-googleplus-outline"></i> </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h6 class="iq-tw-6 iq-mt-10"><a href="team-details-1.html">Nik Jorden</a></h6>
+                            <p>CEO, Bitcoin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Team -->
+        <!-- Clients -->
+        <div class="iq-our-clients yellow-bg iq-ptb-30 ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 ">
+                        <div class="owl-carousel" data-nav-dots="false" data-nav-arrow="false" data-items="5" data-sm-items="3" data-lg-items="5" data-md-items="4" data-autoplay="true">
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/01.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/02.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/03.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/04.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/05.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/06.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/01.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/02.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/03.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/04.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/05.png" alt="#"></a></div>
+                            <div class="item"> <a href="clients.html"><img class="img-fluid center-block" src="images/clients/white/06.png" alt="#"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Clients -->
+        <!-- start: MAIN JAVASCRIPTS -->
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="bower_components/components-modernizr/modernizr.js"></script>
+		<script src="bower_components/js-cookie/src/js.cookie.js"></script>
+		<script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+		<script src="bower_components/jquery-fullscreen/jquery.fullscreen-min.js"></script>
+		<script src="bower_components/switchery/dist/switchery.min.js"></script>
+		<script src="bower_components/jquery.knobe/dist/jquery.knob.min.js"></script>
+		<script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+		<script src="bower_components/slick.js/slick/slick.min.js"></script>
+		<script src="bower_components/jquery-numerator/jquery-numerator.js"></script>
+		<script src="bower_components/ladda/dist/spin.min.js"></script>
+		<script src="bower_components/ladda/dist/ladda.min.js"></script>
+		<script src="bower_components/ladda/dist/ladda.jquery.min.js"></script>
+		<!-- end: MAIN JAVASCRIPTS -->
+		<!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+		<script src="bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+		<script src="bower_components/DataTables/media/js/dataTables.bootstrap.min.js"></script>
+		<!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+		<!-- start: Packet JAVASCRIPTS -->
+		<script src="assets/js/letter-icons.js"></script>
+		<script src="assets/js/main.js"></script>
+		<!-- end: Packet JAVASCRIPTS -->
+		<!-- start: JavaScript Event Handlers for this page -->
+		<script src="assets/js/table-data.js"></script>
+        <script type='text/javascript' src='//cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js'></script>
+		<script>
+			jQuery(document).ready(function() {
+				Main.init();
+				TableData.init();
+               
+			});
+$('.marquee').marquee({
+    //speed in milliseconds of the marquee
+    duration: 20000,
+    //gap in pixels between the tickers
+    gap: 50,
+    //time in milliseconds before the marquee will start animating
+    delayBeforeStart: 0,
+    //'left' or 'right'
+    direction: 'left',
+    //true or false - should the marquee be duplicated to show an effect of continues flow
+    duplicated: true
+});
+
+
+		</script>
+		<!-- end: JavaScript Event Handlers for this page -->
