@@ -1,0 +1,11 @@
+/Users/medina/Projects/afriStox/afristoxAPI/bin/Debug/netcoreapp2.0/afristoxAPI.deps.json
+/Users/medina/Projects/afriStox/afristoxAPI/bin/Debug/netcoreapp2.0/afristoxAPI.runtimeconfig.json
+/Users/medina/Projects/afriStox/afristoxAPI/bin/Debug/netcoreapp2.0/afristoxAPI.runtimeconfig.dev.json
+/Users/medina/Projects/afriStox/afristoxAPI/bin/Debug/netcoreapp2.0/afristoxAPI.dll
+/Users/medina/Projects/afriStox/afristoxAPI/bin/Debug/netcoreapp2.0/afristoxAPI.pdb
+/Users/medina/Projects/afriStox/afristoxAPI/obj/Debug/netcoreapp2.0/afristoxAPI.csprojResolveAssemblyReference.cache
+/Users/medina/Projects/afriStox/afristoxAPI/obj/Debug/netcoreapp2.0/afristoxAPI.csproj.CoreCompileInputs.cache
+/Users/medina/Projects/afriStox/afristoxAPI/obj/Debug/netcoreapp2.0/afristoxAPI.AssemblyInfoInputs.cache
+/Users/medina/Projects/afriStox/afristoxAPI/obj/Debug/netcoreapp2.0/afristoxAPI.AssemblyInfo.cs
+/Users/medina/Projects/afriStox/afristoxAPI/obj/Debug/netcoreapp2.0/afristoxAPI.dll
+/Users/medina/Projects/afriStox/afristoxAPI/obj/Debug/netcoreapp2.0/afristoxAPI.pdb

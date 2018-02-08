@@ -1,1 +1,20 @@
-﻿<Properties />
+﻿<Properties StartupConfiguration="{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}|Default">
+  <MonoDevelop.Ide.ItemProperties.afriStox PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="afristoX.Backend.DataFetch/Program.cs">
+    <Files>
+      <File FileName="afristoxAPI/Controllers/ValuesController.cs" Line="1" Column="1" />
+      <File FileName="afristoxAPI/Models/Ticker.cs" Line="11" Column="1" />
+      <File FileName="afristoxAPI/DAO/DataAccess.cs" Line="14" Column="35" />
+      <File FileName="afristoX.Backend.DataFetch/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/medina/Projects/afriStox/afriStox/Services/NGASE_API.cs" relfile="afriStox/Services/NGASE_API.cs" line="33" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.afristoxAPI PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

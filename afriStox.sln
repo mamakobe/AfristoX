@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "afriStox", "afriStox\afriSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "afristoX.Backend.DataFetch", "afristoX.Backend.DataFetch\afristoX.Backend.DataFetch.csproj", "{0B12D644-5267-4983-8A1C-CBCB593ACC76}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "afristoxAPI", "afristoxAPI\afristoxAPI.csproj", "{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +21,9 @@ Global
 		{0B12D644-5267-4983-8A1C-CBCB593ACC76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B12D644-5267-4983-8A1C-CBCB593ACC76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B12D644-5267-4983-8A1C-CBCB593ACC76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
