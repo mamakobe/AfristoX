@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using afristoxAPI.DAO;
+using afristoxAPI.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 namespace afristoxAPI.Controllers
@@ -11,9 +13,13 @@ namespace afristoxAPI.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "value1", "value2" };
+            HelperClass _helper = new HelperClass();
+          string _result =  _helper.DataTableToJSONWithJSONNet(DataAccess.GetAllStocks());
+
+
+            return _result;
         }
 
         // GET api/values/5

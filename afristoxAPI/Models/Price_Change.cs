@@ -1,7 +1,7 @@
 ﻿using System;
 namespace afristoxAPI.Models
 {
-    public class PriceChange
+    public class Price_Change
     {
         public Guid pricechange_id { get; set; }
         public Guid marketday_id { get; set; }
