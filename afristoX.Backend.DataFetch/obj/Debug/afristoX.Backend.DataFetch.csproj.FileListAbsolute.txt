@@ -19,3 +19,9 @@
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/HtmlAgilityPack.xml
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.exe
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.pdb
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.csprojResolveAssemblyReference.cache
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Net.Http.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Algorithms.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Encoding.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Primitives.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.X509Certificates.dll

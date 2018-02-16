@@ -23,6 +23,7 @@
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="Views\Shared\Components\StockMarquee\" />
+    <Folder Include="Views\Shared\Components\AfriStockList\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\bower_components\.DS_Store" />

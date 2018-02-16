@@ -7,6 +7,11 @@ using Cassandra.Data.Linq;
 using System.Collections.Generic;
 using System.Linq;
 using System.Data;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 
 namespace afristoX.Backend.DataFetch
 {
@@ -18,6 +23,48 @@ namespace afristoX.Backend.DataFetch
         {
 
             ScrapGhanaSE();
+
+        }
+
+        public static async Task GetNaigeriaDataAsync()
+        {
+           // Cluster cluster = Cluster.Builder().AddContactPoint("127.0.0.1").Build();
+            //Console.WriteLine("Connecting to Afristox Keyspace!");
+            //ISession session = cluster.Connect("afristox");
+            //Console.WriteLine("Connected to Afristox Keyspace!");
+
+            HttpClient client;
+            //The URL of the WEB API Service
+            string url = "https://www.nigerianelite.com/api/stocks";
+            string urlyesterday = "https://www.nigerianelite.com/api/NSE?date=" + DateTime.Today.AddDays(-1);
+            // string _returnvalue ="";
+            client = new HttpClient();
+            client.BaseAddress = new Uri(urlyesterday);
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+            List<Guid> _ticker = new List<Guid>();
+            Guid MarketDayID = GetMarketDayID();
+            DataTable dt = new DataTable();
+            dt.Columns.Add("Ticker_id", typeof(Guid));
+            dt.Columns.Add("Ticker", typeof(string));
+            dt.Columns.Add("PriceOpen", typeof(decimal));
+            dt.Columns.Add("PriceOpenID", typeof(Guid));
+            dt.Columns.Add("PriceClose", typeof(decimal));
+            dt.Columns.Add("PriceCloseID", typeof(Guid));
+            dt.Columns.Add("PriceChange", typeof(decimal));
+            dt.Columns.Add("PriceChangeID", typeof(Guid));
+            dt.Columns.Add("MarketDayID", typeof(Guid));
+
+
+            HttpResponseMessage responseMessage = await client.GetAsync(urlyesterday);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var responseData = responseMessage.Content.ReadAsStringAsync().Result;
+
+              //  List<StocksNigeria> _stocks = JsonConvert.DeserializeObject<List<StocksNigeria>>(responseData);
+                //return _stocks;
+            }
 
         }
         //Get Data From GSE Website
@@ -67,20 +114,20 @@ namespace afristoX.Backend.DataFetch
                     }
 
                 }
-                foreach (var cell in row.SelectNodes("td[6]"))
+                foreach (var cellopen in row.SelectNodes("td[6]"))
                 {
-                    dr["PriceOpen"] = cell.InnerText;
+                    dr["PriceOpen"] = cellopen.InnerText;
                     dr["PriceOpenID"] = Guid.NewGuid();
                 }
-                foreach (var cell in row.SelectNodes("td[7]"))
+                foreach (var cellclose in row.SelectNodes("td[7]"))
                 {
-                    dr["PriceClose"] = cell.InnerText;
+                    dr["PriceClose"] = cellclose.InnerText;
                     dr["PriceCloseID"] = Guid.NewGuid();
                    
                 }
-                foreach (var cell in row.SelectNodes("td[7]"))
+                foreach (var cellchange in row.SelectNodes("td[8]"))
                 {
-                    dr["PriceChange"] = cell.InnerText;
+                    dr["PriceChange"] = cellchange.InnerText;
                     dr["PriceChangeID"] = Guid.NewGuid();
 
                 }

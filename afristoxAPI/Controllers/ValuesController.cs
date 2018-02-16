@@ -13,13 +13,12 @@ namespace afristoxAPI.Controllers
     {
         // GET api/values
         [HttpGet]
-        public string Get()
+        public List<PriceByTicker> Get()
         {
-            HelperClass _helper = new HelperClass();
-          string _result =  _helper.DataTableToJSONWithJSONNet(DataAccess.GetAllStocks());
+          
 
 
-            return _result;
+            return DataAccess.GetAllStocks();
         }
 
         // GET api/values/5

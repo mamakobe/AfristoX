@@ -1,22 +1,39 @@
-﻿<Properties StartupConfiguration="{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}|Default">
+﻿<Properties StartupConfiguration="Run API and Client">
   <MonoDevelop.Ide.ItemProperties.afriStox PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="afristoxAPI/DAO/DataAccess.cs">
     <Files>
-      <File FileName="afristoxAPI/Controllers/ValuesController.cs" Line="15" Column="18" />
-      <File FileName="afristoxAPI/Models/Ticker.cs" Line="11" Column="1" />
-      <File FileName="afristoxAPI/DAO/DataAccess.cs" Line="53" Column="35" />
-      <File FileName="afristoX.Backend.DataFetch/Program.cs" Line="90" Column="17" />
-      <File FileName="afristoxAPI/Helpers/HelperClass.cs" Line="9" Column="22" />
+      <File FileName="afriStox/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="afriStox/Models/ShareTrades.cs" Line="4" Column="29" />
+      <File FileName="afriStox/Services/AfristoxAPI.cs" Line="34" Column="1" />
+      <File FileName="afriStox/ViewComponents/NigeriaStockListViewComponent.cs" Line="22" Column="6" />
+      <File FileName="afriStox/ViewComponents/GhanaStockListViewComponent.cs" Line="23" Column="2" />
+      <File FileName="afriStox/Views/Shared/Components/GhanaStockList/Default.cshtml" Line="36" Column="153" />
+      <File FileName="afristoX.Backend.DataFetch/Program.cs" Line="66" Column="19" />
+      <File FileName="afriStox/Services/NGASE_API.cs" Line="35" Column="63" />
+      <File FileName="afristoX.Backend.DataFetch/StocksNigeria.cs" Line="17" Column="41" />
+      <File FileName="afriStox/Models/StocksNigeria.cs" Line="25" Column="41" />
+      <File FileName="afriStox/Views/Shared/Components/AfriStockList/Default.cshtml" Line="1" Column="1" />
+      <File FileName="afristoxAPI/Controllers/ValuesController.cs" Line="21" Column="37" />
+      <File FileName="afristoxAPI/DAO/DataAccess.cs" Line="15" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/medina/Projects/afriStox/afriStox/Services/NGASE_API.cs" relfile="afriStox/Services/NGASE_API.cs" line="33" column="1" />
-      <Breakpoint file="/Users/medina/Projects/afriStox/afristoxAPI/DAO/DataAccess.cs" relfile="afristoxAPI/DAO/DataAccess.cs" line="32" column="1" />
+      <Breakpoint file="/Users/medina/Projects/afriStox/afriStox/Services/AfristoxAPI.cs" relfile="afriStox/Services/AfristoxAPI.cs" line="25" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="afristoxAPI/DAO/DataAccess.cs" line="38" offsetX="365" offsetY="555" expression="ids.ticker_id" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.ItemProperties.afristoxAPI PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Run API and Client" Name="Run API and Client">
+      <Items>
+        <StartupItem ItemId="{4984E24E-5F7B-4933-91C7-1B5F13121B58}" ItemName="afriStox" ConfigurationId="Default" />
+        <StartupItem ItemId="{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}" ItemName="afristoxAPI" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+  <MonoDevelop.Ide.ItemProperties.afristoX.Backend.DataFetch PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

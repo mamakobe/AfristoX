@@ -10,12 +10,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace afriStox.ViewComponents
 {
     // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
-    public class NigeriaStockListViewComponent:ViewComponent
+    public class AfriStockListViewComponent:ViewComponent
     {
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            NGASE_API _ghana = new NGASE_API();
-            var results = await _ghana.GhanaStockListAsync();
+            AfristoxAPI _ghana = new AfristoxAPI();
+            var results = await _ghana.TradesAsync();
             return View(results);
 
         }
