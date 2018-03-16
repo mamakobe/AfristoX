@@ -11,14 +11,17 @@ namespace afristoxAPI.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
+
+
+        DataAccess data = new DataAccess();
+
+
         // GET api/values
         [HttpGet]
-        public List<PriceByTicker> Get()
+        public string Get()
         {
-          
-
-
-            return DataAccess.GetAllStocks();
+            
+            return data.GetAllStocks();
         }
 
         // GET api/values/5
