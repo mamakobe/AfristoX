@@ -27,6 +27,7 @@ namespace afriStox.Services
             if (responseMessage.IsSuccessStatusCode)
             {
                 var responseData = responseMessage.Content.ReadAsStringAsync().Result;
+              
                 List<ShareTrades> _stocks = JsonConvert.DeserializeObject<List<ShareTrades>>(responseData);
                 return _stocks;
             }

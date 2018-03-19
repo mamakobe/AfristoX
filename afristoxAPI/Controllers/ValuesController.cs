@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using afristoxAPI.DAO;
 using afristoxAPI.Helpers;
 using Microsoft.AspNetCore.Mvc;
-
+using afristoxAPI.Models;
 namespace afristoxAPI.Controllers
 {
     [Route("api/[controller]")]
@@ -18,7 +18,7 @@ namespace afristoxAPI.Controllers
 
         // GET api/values
         [HttpGet]
-        public string Get()
+        public List<Stox_details> Get()
         {
             
             return data.GetAllStocks();

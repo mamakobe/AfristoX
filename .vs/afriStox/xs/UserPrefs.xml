@@ -1,20 +1,20 @@
-﻿<Properties StartupConfiguration="{9DA01CC0-650D-4E59-B257-F55BF6AAAAAC}|Default">
+﻿<Properties StartupConfiguration="Run API and Client">
   <MonoDevelop.Ide.ItemProperties.afriStox PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="afristoxAPI/Controllers/ValuesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="afriStox/Views/Shared/Components/AfriStockList/Default.cshtml">
     <Files>
-      <File FileName="afristoxAPI/Models/Co_Exchange.cs" Line="1" Column="1" />
-      <File FileName="afristoxAPI/Controllers/ValuesController.cs" Line="24" Column="40" />
-      <File FileName="afristoxAPI/DAO/DataAccess.cs" Line="40" Column="13" />
-      <File FileName="afristoxAPI/Program.cs" Line="17" Column="1" />
+      <File FileName="afriStox/Views/Home/Index.cshtml" Line="109" Column="95" />
+      <File FileName="afriStox/Services/AfristoxAPI.cs" Line="24" Column="46" />
+      <File FileName="afriStox/Views/Shared/Components/AfriStockList/Default.cshtml" Line="28" Column="337" />
+      <File FileName="afriStox/Models/ShareTrades.cs" Line="13" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/medina/Projects/afriStox/afristoxAPI/DAO/DataAccess.cs" relfile="afristoxAPI/DAO/DataAccess.cs" line="37" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../afristoxAPI/DAO/DataAccess.cs" line="40" offsetX="473" offsetY="585" expression="results.[0]" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
   <MonoDevelop.Ide.ItemProperties.afristoxAPI PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Run API and Client" Name="Run API and Client">

@@ -1,5 +1,5 @@
 ﻿
-@model IEnumerable<afriStox.Models.StocksGhana>  
+@model IEnumerable<afriStox.Models.ShareTrades>  
 
     <div class="marquee">
       
@@ -9,8 +9,8 @@
 
 
 
-                <span class="breadcrumb-item"><a href="#">@Html.DisplayFor(modelItem => item.name)</a></span>
-                <span class="breadcrumb-item active" aria-current="page">@Html.DisplayFor(modelItem => item.price)</span>
+                <span class="breadcrumb-item"><a href="#">@Html.DisplayFor(modelItem => item.company_name)</a></span>
+                <span class="breadcrumb-item active" aria-current="page">@Html.DisplayFor(modelItem => item.open)</span>
            
    
  }

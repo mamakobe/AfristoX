@@ -23,19 +23,19 @@
                                                                             <label for="checkbox1"> </label>
                                                                         </div>
                                                                         </td>
-                                                                        <td><a href=""> <div class="lettericon pull-left margin-right-10" data-icon="fa" data-box="round" data-color="#6F83B6" data-color-hover="#4862A3"></div> <span class="block">@Html.DisplayFor(modelItem => item.ticker)</span> <span class="text-small text-light">@Html.DisplayFor(modelItem => item.companyName)</span> </a></td>
-                                                                        <td>@Html.DisplayFor(modelItem => item.openingPrice)</td>
-                                                                        <td class="hidden-xs hidden-sm">@Html.DisplayFor(modelItem => item.closingPrice)</td>
-                                                                        <td class="hidden-xs hidden-sm">@Html.DisplayFor(modelItem => item.priceChange)</td>
+                                                                        <td><a href=""> <div class="lettericon pull-left margin-right-10" data-icon="fa" data-box="round" data-color="#6F83B6" data-color-hover="#4862A3"></div> <span class="block"></span> <span class="text-small text-light">@Html.DisplayFor(modelItem => item.company_name)</span> </a></td>
+                                                                        <td>@Html.DisplayFor(modelItem => item.open)</td>
+                                                                        <td class="hidden-xs hidden-sm">@Html.DisplayFor(modelItem => item.close)</td>
+                                                                        <td class="hidden-xs hidden-sm">@Html.DisplayFor(modelItem => item.high)</td>
                                                                         <td class="hidden-xs hidden-sm"><span class="text-bold">0</span></td>
 
-                                                                        @if(item.priceChange > 0){
+                                                                        @if(item.high > 0){
                                                                         <td><span class="label label-sm label-success"><i class="fa fa-hand-o-up"></i> Up</span></td>
                                                                         }
-             @if(item.priceChange < 0){
+             @if(item.high < 0){
                                                                         <td><span class="label label-sm label-danger"><i class="fa fa-hand-o-down"></i>Down</span></td>
                                                                         }
-              @if(item.priceChange == 0m){
+              @if(item.high == 0m){
                                                                         <td><span class="label label-sm label-inverse">No Change</span></td>
                                                                         }
             

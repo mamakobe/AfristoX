@@ -1,4 +1,3 @@
-/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.csproj.CoreCompileInputs.cache
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/afristoX.Backend.DataFetch.exe
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/afristoX.Backend.DataFetch.pdb
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/Cassandra.dll
@@ -10,6 +9,11 @@
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/Microsoft.Extensions.Logging.dll
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/ScrapySharp.Core.dll
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/ScrapySharpAsync.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Net.Http.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Algorithms.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Encoding.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Primitives.dll
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.X509Certificates.dll
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/Microsoft.Extensions.DependencyInjection.Abstractions.xml
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/Microsoft.Extensions.Logging.Abstractions.xml
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/Microsoft.Extensions.Logging.xml
@@ -17,11 +21,7 @@
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/FSharp.Core.xml
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/HtmlAgilityPack.pdb
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/HtmlAgilityPack.xml
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.csprojResolveAssemblyReference.cache
+/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.csproj.CoreCompileInputs.cache
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.exe
 /Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.pdb
-/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/obj/Debug/afristoX.Backend.DataFetch.csprojResolveAssemblyReference.cache
-/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Net.Http.dll
-/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Algorithms.dll
-/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Encoding.dll
-/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.Primitives.dll
-/Users/medina/Projects/afriStox/afristoX.Backend.DataFetch/bin/Debug/System.Security.Cryptography.X509Certificates.dll

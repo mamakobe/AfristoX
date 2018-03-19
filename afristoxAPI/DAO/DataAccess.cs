@@ -7,6 +7,10 @@ using Cassandra;
 using Cassandra.Data.Linq;
 using RethinkDb.Driver;
 using RethinkDb.Driver.Net;
+using System.Linq;
+using System.Threading.Tasks;
+using RethinkDb.Driver.Model;
+using Newtonsoft.Json;
 
 namespace afristoxAPI.DAO
 {
@@ -31,15 +35,22 @@ namespace afristoxAPI.DAO
             }
 
        
-        public string GetAllStocks()
+        public List<Stox_details> GetAllStocks()
         {
             
-            var stocks = R.Db("afri_stoxDB").Table("stock_prices").EqJoin("company_id", 
-                                                                          R.Db("afri_stoxDB").Table("trading_company")).Run(conn());
+           var stocks = R.Db("afri_stoxDB").Table("stock_prices").EqJoin("company_id", 
+                                                                                           R.Db("afri_stoxDB").Table("trading_company"))
+                                           .Without("{ right: 'id'}").Zip().OrderBy("company_id")
 
 
+                                           .Run(conn());
+           stocks = stocks.ToObject<List<Stox_details>>();
+          
+           // List<Stox_details> _stocks = JsonConvert.DeserializeObject<List<Stox_details>>(stocks);
 
-            return stocks.Dump();
+           // var results = stocks.ToList();
+
+            return stocks;
         }
 
 

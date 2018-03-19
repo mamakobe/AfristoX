@@ -14,8 +14,8 @@ namespace afriStox.ViewComponents
     {
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            GHASE_API _ghana = new GHASE_API();
-            var results = await _ghana.GhanaStockListAsync();
+             AfristoxAPI _afristox = new AfristoxAPI();
+            var results = await _afristox.TradesAsync();
             return View(results);
 
         }

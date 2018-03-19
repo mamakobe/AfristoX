@@ -1,0 +1,560 @@
+r.db('afri_stoxDB').table("stock_prices").eq_join("company_id", r.table("trading_company")).run()
+
+r.db('afri_stoxDB').table("trading_company").update(
+    { "exchange_id": "5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd6" }
+)
+r.db('afri_stoxDB').table("stock_exchange")
+
+r.db('afri_stoxDB').table('stock_exchange').insert([
+                            { id:'9a7ba250-ad99-45e3-a692-875df69e9582', name: 'Nairobi Stock Exchange', country:'Kenya' },
+                            { id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd6', name: 'Botswana Stock Exchange', country:'Botswana'},
+                            { id:'0be95d07-3c9f-4d8e-b910-9c9330cec3e6', name: 'Bourse Régionale des Valeurs Mobilières', country:'BRVM' },
+                            { id:'fbd7d86e-fa1f-4dd7-ba97-8967874fcad4', name: 'Egyptian Stock Exchange', country:'Egypt'},
+                            { id:'7fdb36a3-b791-4d7a-831f-648c3ff0d89a', name: 'Ghana Stock Exchange', country:'Ghana' },
+                            { id:'ed035ab0-ed96-4ecc-808d-54086f275cf2', name: 'Malawi Stock Exchange', country:'Malawi'},
+                            { id:'e6feca67-c7ec-413c-985d-4de6ca692c91', name: 'Stock Exchange of Mauritius', country:'Mauritius'},
+                            { id:'142b83fc-4cc5-4e57-aca9-ea8d027ec6fd', name: 'Casablanca Stock Exchange', country:'Morocco' },
+                            { id:'48e33eda-85cd-4855-8537-59a680c9aa84', name: 'Nigerian Stock Exchange', country:'Nigeria'},
+                            { id:'f995b17f-b8d1-478e-9207-2650ce12e5bf', name: 'Rwanda Stock Exchange', country:'Rwanda'},
+                            { id:'7b90b035-0e1d-4012-9aa5-9b8370e78bd4', name: 'Dar es salaam Stock Exchange', country:'Tanzania' },
+                            { id:'40387e1a-0a79-4fa9-aaca-c8ef39651a41', name: 'Bourse des Valeurs Mobilières', country:'Tunisia'},
+                            { id:'a8c08033-d68e-4c06-aed6-a2d00f190a35', name: 'Uganda Securities Exchange', country:'Uganda' },
+                            { id:'18dc35d8-ef5c-449c-8f41-387bc9b9c37b', name: 'Lusaka Stock Exchange', country:'Zambia'},
+                            { id:'5c0f5b83-4b13-44ab-b7e0-fa92f2877e4b', name: 'Zimbabwe Stock Exchange', country:'Zimbabwe'}
+                         
+                            ])
+
+r.db('afri_stoxDB').table('trading_company').insert([
+  {
+   id:'42de9e68-fa34-4896-a55a-e17a2056bd3a',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd6',
+   company_name:'Letshego Holdings'
+  },
+  {
+   id:'f7b87bff-9342-4216-b13f-ccc556551573',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd7',
+   company_name:'Letlole La Rona'
+  },
+  {
+   id:'cd767fa2-5283-405c-9445-7d8ecf79262b',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd8',
+   company_name:'Investec'
+  },
+  {
+   id:'ae05c3d0-c16c-44fb-a319-cdf83c92c9d6',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd9',
+   company_name:'G4S Botswana'
+  },
+  {
+   id:'7e682a88-a486-4a91-b71c-5c57c8156fd9',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd10',
+   company_name:'Furnmart'
+  },
+  {
+   id:'5b16ca81-6117-4a29-9387-1627d554a720',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd11',
+   company_name:'First National Bank Botswana'
+  },
+  {
+   id:'b0568302-413a-45e7-8b4f-563c16a81e01',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd12',
+   company_name:'Engen Botswana'
+  },
+  {
+   id:'dc8bc938-3fc6-4d28-a1ab-a325c913324f',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd13',
+   company_name:'Cresta Marakanelo'
+  },
+  {
+   id:'abab7f53-1247-4f16-8802-3b6e59f45c39',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd14',
+   company_name:'Choppies Enterprises'
+  },
+  {
+   id:'fe9f8355-a512-4bc0-a60b-4250f5c73a56',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd15',
+   company_name:'Chobe Holdings'
+  },
+  {
+   id:'a278164a-dc82-4f46-bf43-d5cfc975bf74',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd16',
+   company_name:'Botswana Insurance Holding'
+  },
+  {
+   id:'c94d6bf8-cf4b-4c22-bf39-57bf2264687b',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd17',
+   company_name:'Botswana Diamonds'
+  },
+  {
+   id:'32ec2198-d50e-4df8-b547-d9e9f35e5415',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd18',
+   company_name:'Blue Financial Services'
+  },
+  {
+   id:'59dbba96-253d-4450-ba76-b1b98cde1b4f',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd19',
+   company_name:'Barclays Bank Of Botswana'
+  },
+  {
+   id:'4bd5ce66-88f2-44c9-a3fc-e7eddc4a532e',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd20',
+   company_name:'Anglo American'
+  },
+  {
+   id:'2c144288-2c33-4dca-9bc9-036387570029',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd21',
+   company_name:'Shumba Energy'
+  },
+  {
+   id:'a29ca91c-76ff-4167-9f00-24a6d99ed523',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd22',
+   company_name:'Sefalana Holding'
+  },
+  {
+   id:'bfcbd6fc-97fa-425f-a300-677c0b308c7f',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd23',
+   company_name:'Sechaba Brewery Holdings'
+  },
+  {
+   id:'0cdc4dac-40ea-42c5-961a-65f9a20443aa',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd24',
+   company_name:'Rdc Properties'
+  },
+  {
+   id:'c105176d-fe69-4993-b562-7ecc2d3d70d8',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd25',
+   company_name:'Primetime Property Holdings'
+  },
+  {
+   id:'688930cc-0b18-4a7d-b1e6-ff22d657a58a',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd26',
+   company_name:'Olympia Capital Corporation (Botswana)'
+  },
+  {
+   id:'cc1a0514-1578-439c-a4ee-6caf92480e1c',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd27',
+   company_name:'New African Properties'
+  },
+  {
+   id:'7bb2e3e3-fc2d-4ebe-9c8d-40ae39f4f7f7',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd28',
+   company_name:'Lucara Diamond Corp'
+  },
+  {
+   id:'fe30316e-bce7-4ca4-8147-bcc957c04d9d',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd29',
+   company_name:'Botswana Telecommunications Corp'
+  },
+  {
+   id:'d61508dd-b3a7-4a0e-8467-6d7be1a28196',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd30',
+   company_name:'A Cap Resources'
+  },
+  {
+   id:'f7ded1e6-fafb-4c47-bbe7-2a456aba8a3e',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd31',
+   company_name:'Standard Chartered Botswana'
+  },
+  {
+   id:'86d1ab9e-2c0e-4bad-9327-bf3347dcc7a1',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd32',
+   company_name:'Turnstar Holdings'
+  },
+  {
+   id:'19ef9da7-9f57-4b38-bc85-8df0fd75abc5',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd33',
+   company_name:'Wilderness Holdings (Botswana)'
+  },
+  {
+   id:'ba38672c-4410-439d-ac2b-b7aec7d18f84',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd34',
+   company_name:'Raven Energy'
+  },
+  {
+   id:'2d237dcc-e85f-41b3-a7f4-50e0591b947b',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd35',
+   company_name:'Afinitas'
+  },
+  {
+   id:'8df7f532-c75b-4647-88af-d0d70ec514ee',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd36',
+   company_name:'Botswana Domestic Companies Index'
+  },
+  {
+   id:'9d749023-faa2-4b2a-812c-33d19ccd81b1',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd37',
+   company_name:'Far Property Company'
+  },
+  {
+   id:'47ada9af-78a3-42e3-bf2e-699fcb10150c',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd38',
+   company_name:'Minergy'
+  },
+  {
+   id:'ca789312-dccb-4760-acfe-7efa5d4bce30',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd39',
+   company_name:'Ca Sales Holdings'
+  },
+  {
+   id:'ecda6d79-7415-4ba1-8e04-8cc9224d54dd',
+   exchange_id:'5d9d3b11-d9e9-4d8d-a98c-5bf90d059dd40',
+   company_name:'Tlou Energy'
+  }
+])
+
+
+r.db('afri_stoxDB').table('stock_prices').insert(
+[
+  {
+    id: 'dda808df-9103-4fe2-8212-6361ba34267e',
+    company_id: '42de9e68-fa34-4896-a55a-e17a2056bd3a',
+    date: '2018-03-16',
+    open: 1.89,
+    high: 1.89,
+    low: 1.89,
+    close: 1.89,
+    volume: 2575
+  },
+  {
+    id: '89e7e632-46cd-4166-bbb7-1df6799df985',
+    company_id: 'f7b87bff-9342-4216-b13f-ccc556551573',
+    date: '2018-03-16',
+    open: 2.06,
+    high: 0,
+    low: 0,
+    close: 2.06,
+    volume: 0
+  },
+  {
+    id: '08930681-acb3-4696-8e84-430229345ba1',
+    company_id: 'cd767fa2-5283-405c-9445-7d8ecf79262b',
+    date: '2018-03-16',
+    open: 53.67,
+    high: 0,
+    low: 0,
+    close: 53.67,
+    volume: 0
+  },
+  {
+    id: 'eaae2d8f-e2d0-4798-8079-a6e5f6cdf28f',
+    company_id: 'ae05c3d0-c16c-44fb-a319-cdf83c92c9d6',
+    date: '2018-03-16',
+    open: 3.92,
+    high: 0,
+    low: 0,
+    close: 3.92,
+    volume: 0
+  },
+  {
+    id: 'b0278af8-68f3-476f-883e-b2c65c5bb160',
+    company_id: '7e682a88-a486-4a91-b71c-5c57c8156fd9',
+    date: '2018-03-16',
+    open: 0.54,
+    high: 0,
+    low: 0,
+    close: 0.54,
+    volume: 0
+  },
+  {
+    id: 'b9964ed3-89f3-4522-8870-7d692a8a4f26',
+    company_id: '5b16ca81-6117-4a29-9387-1627d554a720',
+    date: '2018-03-16',
+    open: 2.24,
+    high: 0,
+    low: 0,
+    close: 2.24,
+    volume: 0
+  },
+  {
+    id: '8ba3c938-9551-4cf3-bd1b-c7e010ec267f',
+    company_id: 'b0568302-413a-45e7-8b4f-563c16a81e01',
+    date: '2018-03-16',
+    open: 10.6,
+    high: 0,
+    low: 0,
+    close: 10.6,
+    volume: 0
+  },
+  {
+    id: '0f752142-e9c7-42c6-832f-216d86fba4cb',
+    company_id: 'dc8bc938-3fc6-4d28-a1ab-a325c913324f',
+    date: '2018-03-16',
+    open: 1.11,
+    high: 0,
+    low: 0,
+    close: 1.11,
+    volume: 0
+  },
+  {
+    id: 'c1a00fc2-fc89-46be-9157-452235a6ef98',
+    company_id: 'abab7f53-1247-4f16-8802-3b6e59f45c39',
+    date: '2018-03-16',
+    open: 2.44,
+    high: 0,
+    low: 0,
+    close: 2.44,
+    volume: 0
+  },
+  {
+    id: '5ea280e9-5b10-40ee-8d0b-e796b682e4aa',
+    company_id: 'fe9f8355-a512-4bc0-a60b-4250f5c73a56',
+    date: '2018-03-16',
+    open: 9.6,
+    high: 9.66,
+    low: 9.6,
+    close: 9.65,
+    volume: 1170
+  },
+  {
+    id: 'aad1858c-e042-4abd-9fac-cb4622d57e8e',
+    company_id: 'a278164a-dc82-4f46-bf43-d5cfc975bf74',
+    date: '2018-03-16',
+    open: 17.99,
+    high: 0,
+    low: 0,
+    close: 17.99,
+    volume: 0
+  },
+  {
+    id: 'e178bc7b-1661-4134-a9ac-bc26103982b6',
+    company_id: 'c94d6bf8-cf4b-4c22-bf39-57bf2264687b',
+    date: '2018-03-16',
+    open: 0.2,
+    high: 0,
+    low: 0,
+    close: 0.2,
+    volume: 0
+  },
+  {
+    id: '9c76a9a4-d3f4-4149-b071-d41a90f84253',
+    company_id: '32ec2198-d50e-4df8-b547-d9e9f35e5415',
+    date: '2018-03-16',
+    open: 0.34,
+    high: 0,
+    low: 0,
+    close: 0.34,
+    volume: 0
+  },
+  {
+    id: 'f073020c-982b-4f41-91c4-053f12197ea9',
+    company_id: '59dbba96-253d-4450-ba76-b1b98cde1b4f',
+    date: '2018-03-16',
+    open: 6.05,
+    high: 0,
+    low: 0,
+    close: 6.05,
+    volume: 0
+  },
+  {
+    id: '62e0d2d2-6798-4cf5-80f2-3e42a582a2f8',
+    company_id: '4bd5ce66-88f2-44c9-a3fc-e7eddc4a532e',
+    date: '2018-03-16',
+    open: 244.95,
+    high: 0,
+    low: 0,
+    close: 244.95,
+    volume: 0
+  },
+  {
+    id: 'de88357f-22a4-4848-8c1f-2c6570e50f3d',
+    company_id: '2c144288-2c33-4dca-9bc9-036387570029',
+    date: '2018-03-16',
+    open: 1.15,
+    high: 0,
+    low: 0,
+    close: 1.15,
+    volume: 0
+  },
+  {
+    id: '873a3720-8f4b-4587-a35d-c5f673fe63a4',
+    company_id: 'a29ca91c-76ff-4167-9f00-24a6d99ed523',
+    date: '2018-03-16',
+    open: 9.13,
+    high: 0,
+    low: 0,
+    close: 9.13,
+    volume: 0
+  },
+  {
+    id: '7abf0104-0b97-40aa-a841-7898b499f586',
+    company_id: 'bfcbd6fc-97fa-425f-a300-677c0b308c7f',
+    date: '2018-03-16',
+    open: 19.41,
+    high: 0,
+    low: 0,
+    close: 19.41,
+    volume: 0
+  },
+  {
+    id: 'c4ca8f2d-94fe-4733-ab39-1fe298d18073',
+    company_id: '0cdc4dac-40ea-42c5-961a-65f9a20443aa',
+    date: '2018-03-16',
+    open: 2.3,
+    high: 0,
+    low: 0,
+    close: 2.3,
+    volume: 0
+  },
+  {
+    id: 'a2e8a438-e711-4c41-8838-b21c8ebce7e4',
+    company_id: 'c105176d-fe69-4993-b562-7ecc2d3d70d8',
+    date: '2018-03-16',
+    open: 3.15,
+    high: 0,
+    low: 0,
+    close: 3.15,
+    volume: 0
+  },
+  {
+    id: '28bddfe1-4a36-436b-b905-cb7d0143223c',
+    company_id: '688930cc-0b18-4a7d-b1e6-ff22d657a58a',
+    date: '2018-03-16',
+    open: 0.2,
+    high: 0,
+    low: 0,
+    close: 0.2,
+    volume: 0
+  },
+  {
+    id: '3de170a5-c2e0-4783-9264-c2253a82faa7',
+    company_id: 'cc1a0514-1578-439c-a4ee-6caf92480e1c',
+    date: '2018-03-16',
+    open: 3.18,
+    high: 0,
+    low: 0,
+    close: 3.18,
+    volume: 0
+  },
+  {
+    id: 'e160d88f-62e1-4c1b-b50e-b9022d13cc7e',
+    company_id: '7bb2e3e3-fc2d-4ebe-9c8d-40ae39f4f7f7',
+    date: '2018-03-16',
+    open: 18.37,
+    high: 0,
+    low: 0,
+    close: 18.37,
+    volume: 0
+  },
+  {
+    id: '16c0b0b8-15aa-402f-ade9-bd70a06a50c7',
+    company_id: 'fe30316e-bce7-4ca4-8147-bcc957c04d9d',
+    date: '2018-03-16',
+    open: 1.57,
+    high: 1.57,
+    low: 1.57,
+    close: 1.57,
+    volume: 1396
+  },
+  {
+    id: 'ffe2c77f-3884-4197-a16e-cfb898546472',
+    company_id: 'd61508dd-b3a7-4a0e-8467-6d7be1a28196',
+    date: '2018-03-16',
+    open: 0.35,
+    high: 0,
+    low: 0,
+    close: 0.35,
+    volume: 0
+  },
+  {
+    id: 'f2e6cb91-da0d-4494-98a9-8235956158f6',
+    company_id: 'f7ded1e6-fafb-4c47-bbe7-2a456aba8a3e',
+    date: '2018-03-16',
+    open: 4.99,
+    high: 0,
+    low: 0,
+    close: 4.99,
+    volume: 0
+  },
+  {
+    id: '2878ea83-921a-4d43-82d1-3e9b3b0d7df5',
+    company_id: '86d1ab9e-2c0e-4bad-9327-bf3347dcc7a1',
+    date: '2018-03-16',
+    open: 3.3,
+    high: 3.3,
+    low: 3.29,
+    close: 3.29,
+    volume: 291
+  },
+  {
+    id: 'f2fdb400-73be-4e97-a849-3a8d9b60b92a',
+    company_id: '19ef9da7-9f57-4b38-bc85-8df0fd75abc5',
+    date: '2018-03-16',
+    open: 5.75,
+    high: 0,
+    low: 0,
+    close: 5.75,
+    volume: 0
+  },
+  {
+    id: '0f19f24a-71b4-44b7-b7d1-559dbf71b2e1',
+    company_id: 'ba38672c-4410-439d-ac2b-b7aec7d18f84',
+    date: '2018-03-16',
+    open: 0.05,
+    high: 0,
+    low: 0,
+    close: 0.05,
+    volume: 0
+  },
+  {
+    id: '6d3d5e67-c9fc-4560-9b76-c7ab6410428e',
+    company_id: '2d237dcc-e85f-41b3-a7f4-50e0591b947b',
+    date: '2018-03-16',
+    open: 1.05,
+    high: 0,
+    low: 0,
+    close: 1.05,
+    volume: 0
+  },
+  {
+    id: '0fbd448b-2bf7-47e0-9989-c82fc7830e47',
+    company_id: '8df7f532-c75b-4647-88af-d0d70ec514ee',
+    date: '2018-03-16',
+    open: 0,
+    high: 0,
+    low: 0,
+    close: 8680.01,
+    volume: 5432
+  },
+  {
+    id: 'a2780331-a6ec-47ee-a1ca-637fa5c48e10',
+    company_id: '9d749023-faa2-4b2a-812c-33d19ccd81b1',
+    date: '2018-03-16',
+    open: 2.5,
+    high: 0,
+    low: 0,
+    close: 2.5,
+    volume: 0
+  },
+  {
+    id: 'ec682c51-f6e1-41cb-9eba-8935ca62c9c9',
+    company_id: '47ada9af-78a3-42e3-bf2e-699fcb10150c',
+    date: '2018-03-16',
+    open: 0.9,
+    high: 0,
+    low: 0,
+    close: 0.9,
+    volume: 0
+  },
+  {
+    id: '8d7ba1ae-035d-4e12-a095-57bca461ebcc',
+    company_id: 'ca789312-dccb-4760-acfe-7efa5d4bce30',
+    date: '2018-03-16',
+    open: 3.6,
+    high: 0,
+    low: 0,
+    close: 3.6,
+    volume: 0
+  },
+  {
+    id: 'd9108871-2099-43f1-9ecf-76702e047088',
+    company_id: 'ecda6d79-7415-4ba1-8e04-8cc9224d54dd',
+    date: '2018-03-16',
+    open: 1.56,
+    high: 0,
+    low: 0,
+    close: 1.56,
+    volume: 0
+  }
+]
+
+)
